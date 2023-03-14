@@ -1,6 +1,5 @@
 import React from "react";
 import HeaderComponent from "./HeaderComponent";
-import "../styles/MainComponent.scss";
 
 function MainComponent({ children }) {
   return (
@@ -8,15 +7,9 @@ function MainComponent({ children }) {
       <div className="main_header">
         <HeaderComponent></HeaderComponent>
       </div>
-      {/* <div className="main_left_container">
-        <LeftContainer></LeftContainer>
-      </div>
       <div className="main_container">
-        <MainContainer></MainContainer>
+        {/* <MainContainer></MainContainer> */}
       </div>
-      <div className="footer">
-        <Footer></Footer>
-      </div> */}
     </div>
   );
 }

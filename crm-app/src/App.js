@@ -1,14 +1,16 @@
-import { Route, Routes } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import MainComponent from "./components/MainComponent";
+import RegistrationPage from "./pages/RegistrationPage";
+import MainComponent from "./components/MainComponent.jsx";
 
 function App() {
   return (
-    <MainComponent>
-      <Routes>
-        <Route></Route>
-      </Routes>
-    </MainComponent>
+    <Routes>
+      <Route exact path="/" element={<RegistrationPage />} />
+      <Route path="step2" />
+      <Route path="step3" />
+      <Route path="result" />
+    </Routes>
   );
 }
 
